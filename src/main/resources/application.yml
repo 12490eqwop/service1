@@ -1,0 +1,19 @@
+server:
+ port: 8101
+ servlet:
+  context-path: "/service"
+
+eureka:
+ name: sampleService1
+ port: 8101
+
+ registration:
+   enabled: true
+
+ vipAddress: sampleservice1.mydomain.net
+ prferSameZone: true
+ shouldUseDns: false
+
+ serviceUrl:
+  default: http://localhost:8080/eureka/v2/
+
